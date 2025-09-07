@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page Assignment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Interactive Web Pages with JavaScript</h1>
+        <p>An assignment showcasing JavaScript events, interactive elements, and form validation.</p>
+    </header>
+
+    <main>
+        <!-- Part 1: JavaScript Event Handling -->
+        <section class="card">
+            <h2>Part 1: Basic Event Handling</h2>
+            <p>Here are some simple examples of event handling.</p>
+            <div class="event-examples">
+                <button id="clickMeBtn">Click Me!</button>
+                <p id="clickMessage"></p>
+                <div id="hoverBox" class="hover-box">Hover over me!</div>
+            </div>
+        </section>
+
+        <!-- Part 2: Building Interactive Elements -->
+        <section class="card">
+            <h2>Part 2: Interactive Elements</h2>
+
+            <!-- Feature 1: Light/Dark Mode Toggle -->
+            <div class="interactive-feature">
+                <h3>Light/Dark Mode Toggle</h3>
+                <p>Click the button to switch between light and dark themes.</p>
+                <button id="themeToggleBtn">Toggle Theme</button>
+            </div>
+
+            <!-- Feature 2: Collapsible FAQ Section -->
+            <div class="interactive-feature">
+                <h3>Collapsible FAQ Section</h3>
+                <p>Click on a question to reveal the answer.</p>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>What is the DOM?</h4>
+                            <span>&#9660;</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way, programming languages can connect to the page.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>What is an event listener?</h4>
+                            <span>&#9660;</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>An event listener is a procedure or function in a computer program that waits for an event to occur. Examples of events are user actions such as a mouse click, key press, or a change in the state of an element. The listener is programmed to react to the event by executing a callback function.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Part 3: Form Validation -->
+        <section class="card">
+            <h2>Part 3: Form Validation</h2>
+            <p>Fill out the form below. Validation is handled by JavaScript.</p>
+            <form id="contactForm" novalidate>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username">
+                    <div class="error-message" id="usernameError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address">
+                    <div class="error-message" id="emailError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter a password">
+                    <div class="error-message" id="passwordError"></div>
+                </div>
+                <button type="submit">Submit</button>
+                <div id="formSuccessMessage" class="success-message"></div>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
